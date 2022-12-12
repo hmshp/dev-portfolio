@@ -1,0 +1,120 @@
+/* 디폴트 스타일 */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 헤더 */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  line-height: 85%;
+  letter-spacing: -0.8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation-item {
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navigation-item a {
+  padding: 9px 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* main - about section */
+
+main {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.section {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro {
+  margin-top: 100px;
+  margin-bottom: 140px;
+}
+
+.greeting {
+  font-size: 3.2rem;
+  line-height: 80px;
+  margin: 10px 0;
+}
+
+.about-article {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.5%;
+}
+
+.about-article p {
+  margin-bottom: 10px;
+}
+
+.name-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.jobtitle-text {
+  opacity: 0.6;
+}
