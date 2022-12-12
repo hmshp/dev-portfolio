@@ -31,6 +31,11 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* 헤더 */
 
 header {
@@ -38,6 +43,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
+  margin-bottom: 100px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -70,7 +76,7 @@ header {
   color: inherit;
 }
 
-/* main - about section */
+/* main - about */
 
 main {
   font-size: 1.05rem;
@@ -88,25 +94,27 @@ main {
   margin-left: auto;
 }
 
-.intro {
-  margin-top: 100px;
-  margin-bottom: 140px;
+.about {
+  margin-bottom: 8.8rem;
 }
 
 .greeting {
   font-size: 3.2rem;
   line-height: 80px;
-  margin: 10px 0;
+  margin-bottom: 4rem;
 }
 
-.about-article {
-  margin-top: 4rem;
+.jobtitle-text {
+  margin-bottom: 0.65rem;
+}
+
+.my-story {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5.5%;
 }
 
-.about-article p {
+.my-story p {
   margin-bottom: 10px;
 }
 
@@ -117,4 +125,22 @@ main {
 
 .jobtitle-text {
   opacity: 0.6;
+}
+
+/* main - projects */
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 3.4rem;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.project-preview {
+
 }
