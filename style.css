@@ -129,10 +129,16 @@ main {
 
 /* main - projects */
 
-.projects-heading {
-  font-size: 2.5rem;
-  font-weight: 400;
+.projects-header {
   margin-bottom: 3.4rem;
+}
+
+.projects h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.63rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .projects-list {
@@ -141,6 +147,20 @@ main {
   gap: 40px;
 }
 
-.project-preview {
+.project-preview-img {
+  margin-bottom: 2.5rem;
+}
 
+.project-name {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-light {
+  opacity: 0.6;
+}
+
+.project-summary {
 }
