@@ -129,6 +129,10 @@ main {
 
 /* main - projects */
 
+.projects {
+  padding-bottom: 8.8rem;
+}
+
 .projects-header {
   margin-bottom: 3.4rem;
 }
@@ -147,20 +151,48 @@ main {
   gap: 40px;
 }
 
+.project:hover img {
+  transform: scale(1.02);
+}
+
+.project:hover .project-detail-text {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .project-preview-img {
+  border-radius: 2px;
   margin-bottom: 2.5rem;
+  transition: transform 400ms;
+  cursor: pointer;
 }
 
 .project-name {
   font-size: 1.25rem;
-  margin-bottom: 5px;
   font-weight: 400;
+  margin-bottom: 5px;
+  line-height: 1.4;
   font-family: 'Montserrat', sans-serif;
 }
 
 .text-light {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .project-summary {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-detail-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.fa-solid {
+  font-size: 0.8rem;
 }
