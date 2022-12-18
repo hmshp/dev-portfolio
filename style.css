@@ -16,6 +16,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Nanum Gothic', sans-serif;
+  color: #1a1b1f;
 }
 
 img, picture, video, canvas, svg {
@@ -31,10 +32,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
+
 
 /* 헤더 */
 
@@ -46,6 +44,12 @@ header {
   margin-bottom: 100px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+} 
 
 .logo {
   line-height: 85%;
@@ -79,7 +83,6 @@ header {
 /* main - about */
 
 main {
-  font-size: 1.05rem;
   line-height: 1.8;
 }
 
@@ -112,6 +115,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5.5%;
+  line-height: 2;
+  color: rgb(70, 70, 70);
 }
 
 .my-story p {
@@ -125,6 +130,10 @@ main {
 
 .jobtitle-text {
   opacity: 0.6;
+}
+
+.highlight-text {
+  font-weight: 600;
 }
 
 /* projects */
@@ -149,6 +158,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .project:hover img {
@@ -268,3 +279,152 @@ main {
   background-color: #32343a;
   color: #fff
 }
+
+/* EZ Cocktails intro */
+
+.project-page-intro {
+  line-height: 2;
+  margin-bottom: 8.5rem;
+}
+
+.project-page-intro h2 {
+  font-family: 'Montserrat';
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 0.63rem;
+}
+
+.project-page-intro h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-page-intro h4 {
+  color: #1a1b1f;
+  margin-bottom: 0.63rem;
+}
+
+.project-page-summary {
+  color: rgb(70, 70, 70);
+  margin-bottom: 4rem;
+}
+
+.project-page-intro-articles-wrapper {
+  display: flex;
+  gap: 50px;
+  color: rgb(70, 70, 70);
+}
+
+/* EZ cocktails 개발 프로세스 */
+
+.ez-cocktails-process {
+  line-height: 2;
+  margin-bottom: 8.5rem;
+  color: rgb(70, 70, 70);
+}
+
+.process-summary {
+  margin-bottom: 2.5rem;
+}
+
+.ez-cocktails-process h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.63rem;
+  font-weight: 400;
+}
+
+.process-articles-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px 50px;
+}
+
+.process-capture {
+  margin-bottom: 1.8rem;
+}
+
+/* 문제 및 해결 과정 */
+
+.troubleshooting {
+  color: rgb(70, 70, 70);
+  margin-bottom: 5.5rem;
+}
+
+.troubleshooting-article {
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 30px;
+}
+
+.troubleshooting h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.troubleshooting h4 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.troubleshooting h5 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.troubleshooting-img {
+  margin-bottom: 1.8rem;
+}
+
+.troubleshooting-desc {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px; */
+  line-height: 2;
+}
+
+.troubleshooting-desc-item {
+  margin-bottom: 0.63rem;
+}
+
+.troubleshooting-text {
+  margin-bottom: 0.63rem;
+}
+
+/* 배운 점 */
+
+.lessons-learned {
+  line-height: 2;
+  padding-bottom: 2rem;
+}
+
+.lessons-learned h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.63rem;
+  font-weight: 400;
+}
+
+.lessons-learned h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.63rem;
+}
+
+.lesson {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 30px;
+  margin-bottom: 1.8rem;
+}
+
+.lesson-list {
+  list-style: circle;
+}
+
+
+
