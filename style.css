@@ -280,7 +280,7 @@ main {
   color: #fff
 }
 
-/* EZ Cocktails intro */
+/* project intro */
 
 .project-page-intro {
   line-height: 2;
@@ -316,7 +316,7 @@ main {
   color: rgb(70, 70, 70);
 }
 
-/* EZ cocktails 개발 프로세스 */
+/* project 개발 프로세스 */
 
 .ez-cocktails-process {
   line-height: 2;
@@ -344,7 +344,7 @@ main {
   margin-bottom: 1.8rem;
 }
 
-/* 문제 및 해결 과정 */
+/* project 문제 및 해결 과정 */
 
 .troubleshooting {
   color: rgb(70, 70, 70);
@@ -400,7 +400,7 @@ main {
 
 .lessons-learned {
   line-height: 2;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .lessons-learned h3 {
@@ -426,5 +426,10 @@ main {
   list-style: circle;
 }
 
+/* 그 외 */
+
+.film-planet-posts-img {
+  margin-top: 8.5rem;
+}
 
 
