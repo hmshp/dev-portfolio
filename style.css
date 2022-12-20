@@ -325,6 +325,16 @@ main {
   color: rgb(70, 70, 70);
 }
 
+.website-live-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.website-live-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 /* project 개발 프로세스 */
 
 .ez-cocktails-process {
