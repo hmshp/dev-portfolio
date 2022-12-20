@@ -87,6 +87,55 @@ header {
   color: inherit;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu .fa-solid {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 200px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: 98.8px;
+    width: 100%;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    background: #f9f7f7;
+  }
+
+  .navigation.visible {
+    display: flex;
+  }
+
+  .navigation-item {
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navigation-item a {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
 /* main - about */
 
 main {
@@ -112,7 +161,7 @@ main {
 
 .greeting {
   font-size: 3.2rem;
-  line-height: 80px;
+  line-height: 1.6;
   margin-bottom: 4rem;
 }
 
@@ -144,6 +193,23 @@ main {
 .highlight-text {
   font-weight: 600;
 }
+
+@media (max-width: 1024px) {
+  .line-break-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 2rem;
+  }
+
+  .my-story {
+    display: block;
+  }
+}
+
 
 /* projects */
 
@@ -215,6 +281,14 @@ main {
 
 .fa-solid {
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .projects-list {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    gap: 100px;
+  }
 }
 
 /* contact */
@@ -289,6 +363,12 @@ main {
   color: #fff
 }
 
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px;
+  }
+}
+
 /* project intro */
 
 .project-page-intro {
@@ -335,6 +415,12 @@ main {
   text-underline-offset: 4px;
 }
 
+@media (max-width: 768px) {
+  .project-page-intro-articles-wrapper {
+    flex-direction: column;
+  }
+}
+
 /* project 개발 프로세스 */
 
 .ez-cocktails-process {
@@ -361,6 +447,12 @@ main {
 
 .process-capture {
   margin-bottom: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .process-articles-wrapper { 
+    grid-template-columns: 1fr;
+  }
 }
 
 /* project 문제 및 해결 과정 */
@@ -413,6 +505,12 @@ main {
 
 .troubleshooting-text {
   margin-bottom: 0.63rem;
+}
+
+@media (max-width: 768px) {
+  .troubleshooting-article {
+    grid-template-columns: none;
+  }
 }
 
 /* 배운 점 */
@@ -468,5 +566,11 @@ main {
   gap: 30%;
   list-style: none;
   padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .other-projects-list {
+    display: block;
+  }
 }
 

@@ -63,7 +63,7 @@
           <section class="troubleshooting-desc">
             <img class="troubleshooting-img" src="./images/film-planet/async-await.png" />
             <p class="troubleshooting-text">
-              사용자 collection을 리턴하는 getUsers() 라는 비동기 함수를 호출한 뒤 findOne 메소드를 호출해서, 파라미터의 username이 DB에 존재하는지 확인하는 것이 목표였습니다. 그런데 "getUsers(...).findOnd is not a function"이라는 에러가 발생했습니다.
+              사용자 collection을 리턴하는 getUsers() 라는 비동기 함수를 호출한 뒤 findOne 메소드를 호출해서, 파라미터의 username이 DB에 존재하는지 확인하는 것이 목표였습니다. 그런데 "getUsers(...).findOne is not a function"이라는 에러가 발생했습니다.
             </p>
             <p class="troubleshooting-text">
               getUsers()는 비동기 함수이므로 앞에 await 키워드를 붙여서 함수가 resolve 될 때까지 기다린 다음에 값을 받아야 다음 코드를 정상적으로 실행할 수 있는데, await 키워드가 없어서 값도 아직 못 받았는데 다음 코드를 실행하니 에러가 발생한 것이었습니다.
