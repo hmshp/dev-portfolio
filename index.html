@@ -19,15 +19,14 @@
     </a>
     <nav>
       <ul class="navigation">
-        <li class="navigation-item"><a href="#">Home</a></li>
-        <li class="navigation-item"><a href="#">About</a></li>
-        <li class="navigation-item"><a href="#">Projects</a></li>
-        <li class="navigation-item"><a href="#">Contact</a></li>
+        <li class="navigation-item"><a href="#about">About</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container">
         <p class="name-text">손혜미</p>
         <p class="jobtitle-text">프론트엔드 개발자</p>
@@ -61,7 +60,7 @@
         </article>
       </div>
     </section>
-    <section class="projects section">
+    <section class="projects section" id="projects">
       <div class="container">
         <section class="projects-header">
           <h2>Projects</h2>
@@ -98,7 +97,7 @@
     <!-- 아래에 적은 이름, 이메일, 내용을 메일로 보낼 수 있나? (지금은 아닌 듯..) 
       보낼 수 있게 수정해야 된다
     -->
-    <section class="contact section">
+    <section class="contact section" id="contact">
       <div class="container">
         <h2>Contact</h2>
         <p class="contact-intro text-light">개발자를 찾고 계시거나 궁금한 점이 있으시면<br />이곳으로 연락해 주세요.</p>
@@ -107,21 +106,7 @@
           method="post"
           enctype="text/plain"
         >
-          <div class="form-content">
-            <div class="form-item">
-              <label>성명</label>
-              <input class="text-field" type="text" />
-            </div>
-            <div class="form-item">
-              <label>이메일</label>
-              <input class="text-field" type="email" />
-            </div>
-            <div class="form-item form-message">
-              <label>내용</label>
-              <textarea class="text-field" rows="6"></textarea>
-            </div>
-          </div>
-          <button class="form-button">전송하기</button>
+          <button class="form-button">메일 보내기</button>
         </form>        
       </div>
     </section>
