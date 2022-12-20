@@ -15,14 +15,6 @@
     <a href="index.html" class="logo-link">
       <h1 class="logo">HM<br />SON.</h1>
     </a>
-    <nav>
-      <ul class="navigation">
-        <li class="navigation-item"><a href="#">Home</a></li>
-        <li class="navigation-item"><a href="#">About</a></li>
-        <li class="navigation-item"><a href="#">Projects</a></li>
-        <li class="navigation-item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
   </header>
   <main>
     <section class="project-page-intro section">
@@ -124,7 +116,7 @@
       <div class="container">
         <h3>배운 점</h3>
         <article class="lesson">
-          <h4>놓치기 쉬운 <span class="highlight-text">UX 디테일</span>까지 신경써야 좋은 사용자 경험을 제공할 수 있다는 사실을 배웠습니다.</h4>
+          <h4>놓치기 쉬운 <span class="highlight-text">UX 디테일</span>까지 신경써야<br>좋은 사용자 경험을 제공할 수 있다는 것을<br>배웠습니다.</h4>
           <ul class="lesson-list">
             <li>로딩 상태일 때 스피너 띄우기</li>
             <li>에러 발생 시 에러 UI를 보여줘서 사용자가 당황하지 않도록 어떤 상황인지 안내하기</li>
@@ -133,7 +125,7 @@
           </ul>
         </article>
         <article class="lesson">
-          <h4><span class="highlight-text">reducer</span>와 dispatch에 친숙해지는 계기</h4>
+          <h4><span class="highlight-text">reducer</span>와 dispatch에<br>친숙해지는 계기</h4>
           <ul class="lesson-list">
             <li>예전에는 useState와 Context API로만 상태를 관리해서 처음엔 이 개념이 낯설고 어려웠는데, 팀원이 useReducer를 이용해서 만든 action과 reducer 코드를 보며 개발하다 보니 reducer와 dispatch에 익숙해질 수 있었습니다.</li>
             <li>그 덕분에 이후에 개인 프로젝트를 진행할 때 redux-toolkit에 금방 적응할 수 있었습니다.</li>
@@ -145,6 +137,39 @@
             <li>PR 메시지를 자세히 남기면 팀원들이 서로의 코드를 바로 이해할 수 있어 큰 도움이 된다는 점을 배웠습니다.</li>
             <li>개발 과정을 기록으로 남기면 버그가 발생했을 때도 원인을 비교적 빨리 찾을 수 있고, 시간이 흘러 개인 공부를 할 때 참고할 수 있어서 효과적이라는 사실을 알게 되었습니다.</li>
           </ul>
+        </article>
+      </div>
+    </section>
+    <section class="contact section" id="contact">
+      <div class="container">
+        <article class="other-projects">
+          <h3>
+            그 외 프로젝트
+          </h3>
+          <ul class="other-projects-list">
+            <li class="project">
+              <a href="./film-planet.html">
+                <img class="project-preview-img" src="/images/film-planet.png" />
+              </a>
+              <p class="project-name">Film Planet</p>
+              <p class="project-summary text-light">인상 깊게 본 영화, 드라마, 유튜브 영상에 대한 감상을 기록하는 앱으로, React, Express, Mongo DB를 이용했습니다.</p>
+              <a href="./film-planet.html" class="project-detail-link">
+                <span class="project-detail-text">프로젝트 보기</span>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="project-page-contact">
+          <h3>Contact</h3>
+          <p class="contact-intro text-light">개발자를 찾고 계시거나 궁금한 점이 있으시면<br />이곳으로 연락해 주세요.</p>
+          <form
+            action="mailto:hyemisonne.gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <button class="form-button">메일 보내기</button>
+          </form>        
         </article>
       </div>
     </section>
